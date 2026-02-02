@@ -12,18 +12,18 @@ const partners = [
     'grundfos.png',
     'hik.png',
     'hoda.png',
-    'legrand.png'
-    'ls.png'
-    'netviel.png'
-    'onda.png'
-    'penguin.png'
-    'rucika.png'
-    'ruijie.png'
-    'sch.png'
-    'supreme.png'
-    'tateyama.png'
-    'tdi.png'
-    'toa.png'
+    'legrand.png',
+    'ls.png',
+    'netviel.png',
+    'onda.png',
+    'penguin.png',
+    'rucika.png',
+    'ruijie.png',
+    'sch.png',
+    'supreme.png',
+    'tateyama.png',
+    'tdi.png',
+    'toa.png',
     'tray.png'
 ];
 
