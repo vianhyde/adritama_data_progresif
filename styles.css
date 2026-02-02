@@ -621,7 +621,11 @@ body {
 /* Partners Section */
 .partners {
     padding: 60px 24px;
-    background: linear-gradient(180deg, rgba(229, 231, 235, 0.5) 0%, rgba(184, 197, 214, 0.4) 100%);
+    background: linear-gradient(
+        180deg,
+        rgba(229, 231, 235, 0.5) 0%,
+        rgba(184, 197, 214, 0.4) 100%
+    );
     overflow: hidden;
 }
 
@@ -632,25 +636,38 @@ body {
 }
 
 .partners-slider {
-    overflow: hidden;
     position: relative;
-    padding: 20px 0;
+    overflow: hidden;
+    padding: 24px 0;
 }
 
-@keyframes scrollPartners {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(-180px * 10 - 320px));
-    }
+/* Fade kiri-kanan */
+.partners-slider::before,
+.partners-slider::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 120px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.partners-slider::before {
+    left: 0;
+    background: linear-gradient(to right, #e5e7eb 0%, transparent 100%);
+}
+
+.partners-slider::after {
+    right: 0;
+    background: linear-gradient(to left, #e5e7eb 0%, transparent 100%);
 }
 
 .partners-track {
     display: flex;
     gap: 32px;
-    animation: scrollPartners 30s linear infinite;
-    will-change: transform;
+    width: max-content;
+    animation: scroll 30s linear infinite;
 }
 
 .partners-track:hover {
@@ -659,42 +676,38 @@ body {
 
 .partner-item {
     flex: 0 0 180px;
-    background: var(--white);
-    padding: 24px;
+    height: 120px;
+    background: #ffffff;
     border-radius: 16px;
-    border: 2px solid var(--gray-200);
-    transition: all 0.3s ease;
+    border: 2px solid #e5e7eb;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 120px;
+    padding: 24px;
+    transition: all 0.3s ease;
 }
 
 .partner-item:hover {
-    transform: translateY(-8px) scale(1.05);
+    transform: translateY(-6px) scale(1.05);
     box-shadow: 0 12px 30px rgba(74, 95, 165, 0.15);
-    border-color: var(--primary-blue);
+    border-color: #4A5FA5;
     z-index: 10;
 }
 
-.partner-logo {
-    width: 100%;
-    height: auto;
-}
-
-.partner-logo svg,
 .partner-logo img {
-    width: 100%;
-    height: auto;
-    display: block;
     max-height: 70px;
+    width: 100%;
     object-fit: contain;
 }
 
 /* Clients Section */
 .clients {
     padding: 60px 24px;
-    background: linear-gradient(180deg, rgba(159, 179, 209, 0.3) 0%, rgba(229, 231, 235, 0.5) 100%);
+    background: linear-gradient(
+        180deg,
+        rgba(159, 179, 209, 0.3) 0%,
+        rgba(229, 231, 235, 0.5) 100%
+    );
     overflow: hidden;
 }
 
@@ -705,25 +718,38 @@ body {
 }
 
 .clients-slider {
-    overflow: hidden;
     position: relative;
-    padding: 20px 0;
+    overflow: hidden;
+    padding: 24px 0;
 }
 
-@keyframes scrollClients {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(-180px * 10 - 320px));
-    }
+/* Fade kiri-kanan */
+.clients-slider::before,
+.clients-slider::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 120px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.clients-slider::before {
+    left: 0;
+    background: linear-gradient(to right, #d1d5db 0%, transparent 100%);
+}
+
+.clients-slider::after {
+    right: 0;
+    background: linear-gradient(to left, #d1d5db 0%, transparent 100%);
 }
 
 .clients-track {
     display: flex;
     gap: 32px;
-    animation: scrollClients 35s linear infinite;
-    will-change: transform;
+    width: max-content;
+    animation: scroll 35s linear infinite;
 }
 
 .clients-track:hover {
@@ -732,36 +758,38 @@ body {
 
 .client-item {
     flex: 0 0 180px;
-    background: var(--white);
-    padding: 24px;
+    height: 120px;
+    background: #ffffff;
     border-radius: 16px;
-    border: 2px solid var(--gray-200);
-    transition: all 0.3s ease;
+    border: 2px solid #e5e7eb;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 120px;
+    padding: 24px;
+    transition: all 0.3s ease;
 }
 
 .client-item:hover {
-    transform: translateY(-8px) scale(1.05);
+    transform: translateY(-6px) scale(1.05);
     box-shadow: 0 12px 30px rgba(239, 68, 68, 0.12);
-    border-color: var(--accent-red);
+    border-color: #EF4444;
     z-index: 10;
 }
 
-.client-logo {
+.client-logo img {
+    max-height: 70px;
     width: 100%;
-    height: auto;
+    object-fit: contain;
 }
 
-.client-logo svg,
-.client-logo img {
-    width: 100%;
-    height: auto;
-    display: block;
-    max-height: 70px;
-    object-fit: contain;
+/* Shared Animation */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 /* Contact Section Updates */
