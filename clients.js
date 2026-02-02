@@ -3,16 +3,16 @@
 // File logo harus ada di folder: assets/images/clients/
 
 const clients = [
-    'client-1.png',
-    'client-2.png',
-    'client-3.png',
-    'client-4.png',
-    'client-5.png',
-    'client-6.png',
-    'client-7.png',
-    'client-8.png',
-    'client-9.png',
-    'client-10.png'
+    'bbx.png',
+    'bjb.png',
+    'bsp.png',
+    'ip.png',
+    'pta.png',
+    'sanbe.png',
+    'smc.png',
+    'garandiri.png',
+    'sei.png',
+    'marvee.png'
 ];
 
 // Fungsi untuk load clients
