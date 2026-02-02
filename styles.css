@@ -667,7 +667,7 @@ body {
     display: flex;
     gap: 32px;
     width: max-content;
-    animation: scroll 30s linear infinite;
+    animation: scroll 70s linear infinite;
 }
 
 .partners-track:hover {
@@ -789,6 +789,13 @@ body {
     }
     to {
         transform: translateX(-50%);
+    }
+}
+
+/* HP */
+@media (max-width: 768px) {
+    .partners-track {
+        animation-duration: 100s;
     }
 }
 
