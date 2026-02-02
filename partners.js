@@ -3,16 +3,26 @@
 // File logo harus ada di folder: assets/images/partners/
 
 const partners = [
-    'partner-1.png',
-    'partner-2.png',
-    'partner-3.png',
-    'partner-4.png',
-    'partner-5.png',
-    'partner-6.png',
-    'partner-7.png',
-    'partner-8.png',
-    'partner-9.png',
-    'partner-10.png'
+    'amp.png',
+    'belden.png',
+    'belt.png',
+    'boss.png',
+    'dahua.png',
+    'gree.png',
+    'grundfos.png',
+    'hik.png',
+    'hoda.png',
+    'ls.png'
+    'netviel.png'
+    'onda.png'
+    'penguin.png'
+    'rucika.png'
+    'sch.png'
+    'supreme.png'
+    'tateyama.png'
+    'tdi.png'
+    'toa.png'
+    'tray.png'
 ];
 
 // Fungsi untuk load partners
