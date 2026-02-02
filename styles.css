@@ -667,7 +667,7 @@ body {
     display: flex;
     gap: 32px;
     width: max-content;
-    animation: scroll 70s linear infinite;
+    animation: scroll 80s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
 }
 
 .partners-track:hover {
@@ -749,7 +749,7 @@ body {
     display: flex;
     gap: 32px;
     width: max-content;
-    animation: scroll 35s linear infinite;
+    animation: scroll 45s ease-in-out infinite;
 }
 
 .clients-track:hover {
@@ -795,7 +795,11 @@ body {
 /* HP */
 @media (max-width: 768px) {
     .partners-track {
-        animation-duration: 100s;
+        animation-duration: 110s;
+    }
+
+    .clients-track {
+        animation-duration: 70s;
     }
 }
 
