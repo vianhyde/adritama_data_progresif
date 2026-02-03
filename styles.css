@@ -1226,3 +1226,12 @@ body {
     }
 }
 
+/* === REMOVE fade overlay on running logos === */
+
+.partners-slider::before,
+.partners-slider::after,
+.clients-slider::before,
+.clients-slider::after {
+    display: none !important;
+}
+
