@@ -654,13 +654,21 @@ body {
 }
 
 .partners-slider::before {
-    left: 0;
-    background: linear-gradient(to right, #e5e7eb 0%, transparent 100%);
+    background: linear-gradient(
+        to right,
+        rgba(229, 231, 235, 0.9) 0%,
+        rgba(229, 231, 235, 0.6) 30%,
+        transparent 100%
+    );
 }
 
 .partners-slider::after {
-    right: 0;
-    background: linear-gradient(to left, #e5e7eb 0%, transparent 100%);
+    background: linear-gradient(
+        to left,
+        rgba(229, 231, 235, 0.9) 0%,
+        rgba(229, 231, 235, 0.6) 30%,
+        transparent 100%
+    );
 }
 
 .partners-track {
@@ -736,13 +744,21 @@ body {
 }
 
 .clients-slider::before {
-    left: 0;
-    background: linear-gradient(to right, #d1d5db 0%, transparent 100%);
+    background: linear-gradient(
+        to right,
+        rgba(209, 213, 219, 0.9) 0%,
+        rgba(209, 213, 219, 0.6) 30%,
+        transparent 100%
+    );
 }
 
 .clients-slider::after {
-    right: 0;
-    background: linear-gradient(to left, #d1d5db 0%, transparent 100%);
+    background: linear-gradient(
+        to left,
+        rgba(209, 213, 219, 0.9) 0%,
+        rgba(209, 213, 219, 0.6) 30%,
+        transparent 100%
+    );
 }
 
 .clients-track {
