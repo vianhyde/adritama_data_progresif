@@ -1161,28 +1161,3 @@ body {
         animation: none;
     }
 }
-
-/* === Partners & Clients : Transparent Style === */
-
-.partner-item,
-.client-item {
-    background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.35);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    box-shadow: none;
-}
-
-/* Hover tetap hidup tapi halus */
-.partner-item:hover {
-    background: rgba(255, 255, 255, 0.25);
-    border-color: rgba(74, 95, 165, 0.6);
-    box-shadow: 0 12px 30px rgba(74, 95, 165, 0.18);
-}
-
-.client-item:hover {
-    background: rgba(255, 255, 255, 0.25);
-    border-color: rgba(239, 68, 68, 0.6);
-    box-shadow: 0 12px 30px rgba(239, 68, 68, 0.18);
-}
-
