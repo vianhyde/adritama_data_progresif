@@ -1106,3 +1106,59 @@ body {
         font-size: 16px;
     }
 }
+
+@media (max-width: 480px) {
+    .logo-text {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    .logo-img {
+        height: 36px;
+    }
+
+    .nav-container {
+        padding: 12px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding-top: 88px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 480px) {
+    .partner-item,
+    .client-item {
+        flex: 0 0 140px;
+        height: 90px;
+        padding: 16px;
+    }
+
+    .partner-logo img,
+    .client-logo img {
+        max-height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn,
+    .btn-whatsapp {
+        min-height: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .circle-1,
+    .circle-2,
+    .circle-3 {
+        animation: none;
+    }
+}
+
