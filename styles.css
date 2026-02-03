@@ -1310,3 +1310,9 @@ body {
         transform: scale(0.97);
     }
 }
+
+.service-icon img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
