@@ -1235,3 +1235,78 @@ body {
     display: none !important;
 }
 
+/* ===============================
+   MOBILE FIX – ABOUT SECTION
+================================ */
+
+@media (max-width: 768px) {
+
+    /* Grid jadi flow vertikal alami */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    /* Konten teks di atas */
+    .about-content {
+        order: 1;
+        text-align: left;
+    }
+
+    /* Visual card di bawah */
+    .about-visual {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Semua card full width */
+    .visual-card {
+        grid-column: auto !important;
+        margin-top: 0 !important;
+        padding: 24px 20px;
+    }
+
+    /* Icon lebih seimbang */
+    .card-icon {
+        font-size: 40px;
+    }
+
+    /* Judul card */
+    .visual-card h3 {
+        font-size: 20px;
+    }
+
+    /* Statistik jadi stack */
+    .about-stats {
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 32px;
+    }
+
+    .stat-item {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .stat-number {
+        font-size: 36px;
+        min-width: 72px;
+    }
+
+    .stat-label {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .visual-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .visual-card:active {
+        transform: scale(0.97);
+    }
+}
