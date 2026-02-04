@@ -1338,7 +1338,7 @@ body {
 
 .footer-logo {
     width: 160px;
-    margin-bottom: 16px;
+    heught: auto;
 }
 
 .footer-desc {
