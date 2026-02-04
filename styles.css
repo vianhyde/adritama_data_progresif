@@ -1322,10 +1322,12 @@ body {
 ================================ */
 
 .footer {
-    background: linear-gradient(180deg, #0B1220 0%, #020617 100%);
-    color: #CBD5E1;
-    padding: 80px 20px 32px;
-    font-size: 14px;
+    position: relative;
+    padding: 80px 24px 40px;
+    background:
+        radial-gradient(1200px 400px at 20% -10%, rgba(74,95,165,0.15), transparent 60%),
+        linear-gradient(180deg, #0B1220 0%, #020617 100%);
+    color: #9CA3AF;
 }
 
 .footer-container {
@@ -1351,6 +1353,28 @@ body {
     max-width: 360px;
     color: #94A3B8;
 }
+
+.footer-brand::after {
+    content: '';
+    display: block;
+    width: 48px;
+    height: 2px;
+    background: #4A5FA5;
+    margin-top: 16px;
+}
+
+.footer-desc,
+.footer-col a,
+.footer-col span,
+.footer-bottom {
+    color: #9CA3AF;
+}
+
+.footer-col h4 {
+    color: #FFFFFF;
+}
+
+
 
 /* Links */
 .footer-links {
@@ -1391,13 +1415,37 @@ body {
 
 /* Divider */
 .footer-divider {
-    margin: 56px auto 24px;
     height: 1px;
-    max-width: 1200px;
+    margin: 40px 0;
     background: linear-gradient(
         to right,
         transparent,
-        rgba(255,255,255,0.15),
+        rgba(255,255,255,0.18),
+        transparent
+    );
+}
+
+.footer-col a {
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-col a:hover {
+    color: #4A5FA5;
+    transform: translateX(4px);
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #4A5FA5,
         transparent
     );
 }
