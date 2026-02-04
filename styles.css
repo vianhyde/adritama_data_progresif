@@ -1338,7 +1338,11 @@ body {
 
 .footer-logo {
     width: 160px;
-    heught: auto;
+    height: auto;
+}
+
+.footer-logo-white {
+    filter: brightness(0) invert(1) drop-shadow(0 2px 8px rgba(255,255,255,0.08));
 }
 
 .footer-desc {
