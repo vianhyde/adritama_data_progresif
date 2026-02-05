@@ -100,88 +100,66 @@ body {
     list-style: none;
 }
 
-.nav-menu li {
-    list-style: none;
-}
-
-@media (max-width: 768px) {
-    .nav-toggle {
-        display: flex;
-    }
-    
-    .nav-menu {
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 100%;
-        background: #020617;
-
-        flex-direction: column;
-        align-items: center;
-        gap: 24px;
-        padding: 24px 0;
-
-        /* SLIDE-DOWN PREMIUM */
-        max-height: 0;
-        overflow: hidden;
-        opacity: 0;
-        transform: translateY(-10px);
-        transition: 
-            max-height 0.45s ease,
-            opacity 0.35s ease,
-            transform 0.35s ease;
-    }
-
-    .nav-menu.active {
-        max-height: 400px; /* cukup untuk semua menu */
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 .nav-link {
-    text-decoration: none;
-    color: var(--gray-800);
-    font-weight: 500;
-    font-size: 15px;
     position: relative;
-    transition: color 0.3s ease;
-}
-
-.nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(90deg, var(--primary-blue), var(--accent-red));
-    transition: width 0.3s ease;
-}
-
-.nav-link:hover {
-    color: var(--primary-blue);
-}
-
-.nav-link:hover::after {
-    width: 100%;
+    color: var(--gray-800);
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 .nav-toggle {
     display: none;
     flex-direction: column;
-    gap: 5px;
+    gap: 6px;
     background: none;
     border: none;
     cursor: pointer;
 }
 
 .nav-toggle span {
-    width: 25px;
+    width: 24px;
     height: 2px;
-    background: var(--gray-800);
+    background: #020617;
     transition: all 0.3s ease;
 }
+
+@media (max-width: 768px) {
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #020617;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding: 24px 0;
+
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(-12px);
+
+        transition:
+            max-height 0.45s ease,
+            opacity 0.35s ease,
+            transform 0.35s ease;
+
+        pointer-events: none;
+    }
+
+    .nav-menu.active {
+        max-height: 360px;
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+}
+
 
 /* Hero Section */
 .hero {
