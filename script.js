@@ -141,7 +141,7 @@ function handleSubmit(event) {
         `Pesan:%0A${message}`;
 
     // Open WhatsApp
-    const whatsappNumber = '6289666667707'; // Format internasional
+    const whatsappNumber = '628212212158'; // Format internasional
     window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, '_blank');
 
     // Show success message
