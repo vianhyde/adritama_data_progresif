@@ -93,11 +93,36 @@ body {
     transform: scale(1.05);
 }
 
-.nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 40px;
-    align-items: center;
+@media (max-width: 768px) {
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background: #020617;
+
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding: 24px 0;
+
+        /* SLIDE-DOWN PREMIUM */
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: 
+            max-height 0.45s ease,
+            opacity 0.35s ease,
+            transform 0.35s ease;
+    }
+
+    .nav-menu.active {
+        max-height: 400px; /* cukup untuk semua menu */
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .nav-link {
