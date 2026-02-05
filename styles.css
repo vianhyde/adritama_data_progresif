@@ -93,8 +93,22 @@ body {
     transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+}
 
+.nav-menu li {
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: flex;
+    }
+    
     .nav-menu {
         position: absolute;
         top: 100%;
@@ -1508,15 +1522,5 @@ body {
     .nav-menu.active li:nth-child(6) { transition-delay: 0.3s; }
 }
 
-.nav-menu {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    list-style: none;
-}
-
-.nav-menu li {
-    list-style: none;
-}
 
 
