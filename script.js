@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', () => {
 // Mobile Navigation Toggle
 const navToggle = document.getElementById('navToggle');
 const navMenu = document.getElementById('navMenu');
@@ -28,7 +29,7 @@ navLinks.forEach(link => {
         spans[1].style.opacity = '1';
         spans[2].style.transform = 'none';
     });
-});
+});    
 
 // Navbar scroll effect
 const navbar = document.getElementById('navbar');
@@ -228,3 +229,5 @@ if (contactForm) {
 }
 
 console.log('CV. Adritama Data Progresif - Website loaded successfully! 🚀');
+
+});
