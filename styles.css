@@ -110,11 +110,11 @@ body {
 
 .nav-toggle {
     display: none;
-    flex-direction: column;
-    gap: 6px;
     background: none;
     border: none;
+    font-size: 28px;
     cursor: pointer;
+    color: var(--gray-900);
 }
 
 .nav-toggle span {
@@ -1010,7 +1010,7 @@ body {
 @media (max-width: 768px) {
     
     .nav-toggle {
-        display: flex;
+        display: block;
     }
 
     .hero {
