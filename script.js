@@ -239,3 +239,23 @@ if (contactForm) {
 console.log('CV. Adritama Data Progresif - Website loaded successfully! 🚀');
 
 });
+
+// ===============================
+// MOBILE NAVIGATION
+// ===============================
+const navToggle = document.getElementById('navToggle');
+const navMenu = document.getElementById('navMenu');
+
+if (navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+
+    // Auto close saat klik menu
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        });
+    });
+}
+
