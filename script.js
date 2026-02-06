@@ -1,5 +1,5 @@
 // ===============================
-// MOBILE NAVIGATION (FIXED)
+// MOBILE NAVIGATION (CLEAN & FIXED)
 // ===============================
 const navToggle = document.getElementById('navToggle');
 const navMenu   = document.getElementById('navMenu');
@@ -9,7 +9,6 @@ if (navToggle && navMenu) {
     navToggle.addEventListener('click', () => {
         navMenu.classList.toggle('active');
 
-        // Hamburger animation
         const spans = navToggle.querySelectorAll('span');
         if (navMenu.classList.contains('active')) {
             spans[0].style.transform = 'rotate(45deg) translate(6px, 6px)';
@@ -36,16 +35,7 @@ if (navToggle && navMenu) {
     });
 }
 
-// Close mobile menu when clicking on a link
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-        const spans = navToggle.querySelectorAll('span');
-        spans[0].style.transform = 'none';
-        spans[1].style.opacity = '1';
-        spans[2].style.transform = 'none';
-    });
-});    
+// Close mobile menu when clicking on a link 
 
 // Navbar scroll effect
 const navbar = document.getElementById('navbar');
