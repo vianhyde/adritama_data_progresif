@@ -52,6 +52,9 @@ body {
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--gray-200);
     transition: all 0.3s ease;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .navbar.scrolled {
@@ -59,12 +62,14 @@ body {
 }
 
 .nav-container {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 16px 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .nav-logo {
@@ -130,10 +135,12 @@ body {
 @media (max-width: 768px) {
 
     .nav-menu {
-        position: absolute;
-        top: 100%;
+        position: fixed;
+        top: 64px;
         left: 0;
+        right: 0;
         width: 100%;
+        max-width: 100vw;
         background: #020617;
 
         display: flex;
@@ -1056,10 +1063,18 @@ body {
 
 @media (max-width: 480px) {
     .logo-text {
-        font-size: 16px;
-        line-height: 1.2;
+        font-size: 14px;
+        max-width: 160px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
+    .nav-logo {
+        flex: 1;
+        min-width: 0;
+    }
+    
     .logo-img {
         height: 36px;
     }
